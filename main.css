@@ -1,0 +1,118 @@
+body {
+  color: #000;
+  background-color: blanchedalmond;
+  margin: 0;  
+}
+
+#root {
+  background-color: rgb(249, 248, 247);
+  padding: 0 10px 50px;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  height: 100vh;
+  box-sizing: border-box;
+}
+
+.container {
+  flex: 2;
+  overflow-y: auto;  
+}
+
+.input-container {
+  position: relative;
+  display: flex;
+}
+
+input {
+  flex: 1;
+  padding: 10px;  
+}
+
+input::placeholder {  
+  opacity: 0.8;
+  color: red;
+}
+
+.hidden {
+  display: none;
+}
+
+.micro {   
+  right: 40px; 
+}
+
+.camera {
+  right: 10px;
+}
+
+.control {
+  position: absolute;
+	content: "";	
+	width: 15px;
+	height: 15px;	
+	border: 1px solid #171717;
+  border-radius: 50%;
+  margin: 5px 5px;
+  padding: 5px;
+  cursor: pointer;
+}
+
+.post {
+  border: 1px solid black; 
+  border-radius: 10px;
+  padding: 10px;
+  margin: 15px;
+  display: grid;  
+  grid-template-columns: repeat(2, 1fr);
+  background-color: #fff;
+}
+
+.geo {
+  font-size: 14px;
+  padding: 5px 0;
+}
+
+.time {
+  font-size: 14px;
+  margin-left: auto;
+}
+
+.content {
+  padding: 5px 0;
+}
+
+.hidden {
+  display: none;
+}
+
+.modal {
+  padding: 15px;
+  border: 1px solid black;
+  border-radius: 12px;
+  width: 55%;  
+  position: fixed;
+  left: 25%;
+  top: 8%;
+  background: #fff;
+}
+
+.modal-input {
+  margin: 10px 0px;
+  width: 95%;  
+}
+
+.form-buttons {
+  display: flex;
+  justify-content: flex-end;
+}
+
+button {
+  background-color: white;
+  border: 1px solid #171717;
+  padding: 10px;  
+  font-size: 15px;
+  margin-right: 5px;
+  cursor: pointer;
+  border-radius: 12px;
+}
