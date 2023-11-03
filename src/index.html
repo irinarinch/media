@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Media</title>
+</head>
+<body>
+	<div id="root">
+    <div class="container"></div>
+    <form class="input-container">
+      <input type="text" class="input">
+      <img src="../src/images/micro.png" class="micro control">
+      <img src="../src/images/camera.png" class="camera control">
+    </form>
+    <div class="modal hidden">
+      <div class="modal-title">
+        Что-то пошло не так
+      </div>
+      <div class="modal-description">
+        К сожалению, нам не удалось определить ваше 
+        местоположение, пожалуйста, дайте разрешение на 
+        использование геолокации, либо введите координаты 
+        вручную.
+        <span class="description">Широта и долгота через запятую</span>
+      </div>
+      <form class="modal-form" novalidate>                            
+        <input type="text" class="modal-input" required>         
+        <div class="form-buttons">  
+          <button type="button" class="cancel-btn">Отмена</button> 
+          <button type="submit" class="save-btn">Ok</button> 
+        </div>
+      </form>  
+    </div>
+  </div>
+</body>
+</html>
